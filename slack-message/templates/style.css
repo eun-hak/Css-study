@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #E5E5E5;
+}
+
+
+
+.message-user img{ 
+    margin-right: 12px;
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+}
+
+
+.message-sender a{
+    font-size: 16px;
+    line-height: 1.25;
+    color: black;
+    border-bottom: none;
+    text-decoration-line: none;
+    display: inline;
+}
+
+.message-timestamp{
+    display: inline;
+    color: #626162;
+}
+.message{
+    padding:8px;
+    width: 810px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+}
+
+
+
+.message-timestamp .tooltip{
+    line-height: 2;
+    text-align: center;
+    font-size: 14px;
+    width: 134px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    position:absolute;
+    top: 22px;
+    left: 165px;
+    border-radius: 5px;
+    opacity: 0;
+    
+}
+
+
+
+.message-timestamp .tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 4px solid #000;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    transform: translateX(-50%);
+  }
+
+  .message-timestamp:hover .tooltip{
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+    
+}
