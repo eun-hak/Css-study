@@ -9,14 +9,21 @@ body {
 }
 
 
+
+
+/*                        랜딩 페이지                     */
+
+
+
 .Landing .container {
     width: 320px;
-    height: 468px;
+    height: 568px;
     background-color: #FDDED8;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 
 .landing-title {
@@ -28,12 +35,29 @@ body {
     /* text-shadow: #00000040 0px 4px 4px 0px; */
 }
 
-@media all and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .Landing .container {
         width: 1440px;
         background-color: #FDDED8;
 
     }
+
+    .landing-title {
+        font-size: 70px;
+        line-height: 1.028571428571429;
+
+
+    }
+
+    .landing-desc {
+        font-size: 22px;
+        font-weight: 1.454545454545455;
+    }
+
+    .button-wrapper {
+        justify-content: center;
+    }
+
 }
 
 .landing-desc {
@@ -46,13 +70,9 @@ body {
 
 .button-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     margin-top: 24px;
-    width: 288px;
-    height: 48px;
-
-
 }
 
 .fill-button {
@@ -66,6 +86,7 @@ body {
     font-size: 15px;
     line-height: 1.6;
     display: block;
+    margin-right: 16px;
 }
 
 .fill-button.inverted {
@@ -73,11 +94,134 @@ body {
     background-color: white;
 }
 
-
-
-
 a {
     text-decoration-line: none;
 }
 
-.container {}
+
+/*                      서비스 페이지                   */
+
+
+
+.service .container {
+    background-color: #F4F5F7;
+    width: 320px;
+    height: 496px;
+
+    /* 글자가 무너짐.. */
+    overflow: hidden;
+    /* 글자가 무너짐.. */
+
+}
+
+.container .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+.service .col-12:first-child {
+    margin-top: 40px;
+}
+
+.service-title {
+    margin-top: 40px;
+    font-size: 22px;
+    line-height: 1.363636363636364;
+
+}
+
+.service .col-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-desc {
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .service .container {
+        width: 1440px;
+        height: 340px;
+    }
+
+    .service .container .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .service .col-12:last-child {
+        margin-top: 40px;
+    }
+
+    .service .col-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* 
+    .service .container .row {
+        width: 930px;
+
+    } */
+
+    .service-title {
+        width: 370px;
+        height: 68px;
+        font-size: 26px;
+        line-height: 1.307692307692308;
+    }
+
+    .service-desc {
+        width: 370px;
+        height: 96px;
+        font-size: 22;
+        line-height: 1.454545454545455;
+    }
+
+
+}
+
+
+
+/*                  프로그램 섹션                   */
+
+.program.section .container {
+    background-color: white;
+    width: 320px;
+    height: 496px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*                  커리큘럼 섹션                   */
+
+
+
+
+
+
+.curriculum-image img {
+    display: none;
+}
