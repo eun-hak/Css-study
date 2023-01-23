@@ -5,10 +5,79 @@
 
 body {
     font-family: 'DM Sans', sans-serif;
-    font-family: 'Inter', sans-serif;
+
 }
 
 
-.Landint {}
+.Landing .container {
+    width: 320px;
+    height: 468px;
+    background-color: #FDDED8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.landing-title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-shadow: 0px 4px 4px #00000040;
+    /* text-shadow: #00000040 0px 4px 4px 0px; */
+}
+
+@media all and (min-width: 1024px) {
+    .Landing .container {
+        width: 1440px;
+        background-color: #FDDED8;
+
+    }
+}
+
+.landing-desc {
+    font-size: 16px;
+    font-weight: 1.375;
+    text-align: center;
+    margin-top: 24px;
+
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 24px;
+    width: 288px;
+    height: 48px;
+
+
+}
+
+.fill-button {
+    padding-top: 12px;
+    width: 140px;
+    height: 48px;
+    font-weight: 700;
+    color: white;
+    background-color: #3040C4;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 1.6;
+    display: block;
+}
+
+.fill-button.inverted {
+    color: #3040C4;
+    background-color: white;
+}
+
+
+
+
+a {
+    text-decoration-line: none;
+}
 
 .container {}
